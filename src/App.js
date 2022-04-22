@@ -7,7 +7,7 @@ const App = () => {
     return (
         <>
             <NavBar />
-            <Slider navBar={<NavBar />} />
+            <Slider />
         </>
     )
 }

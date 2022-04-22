@@ -20,7 +20,7 @@ const NavBar = () => {
                     <div className="col-xl-2"></div>
                 </div> */}
 
-            <nav id="navbarID" className="navbar navbar-expand-lg fixed-top">
+            <nav id="navbarID" className="navbar navbar-expand-lg sticky-top">
 
                 <span href="#" className="navbar-brand text-center align-self-center">
                     {/* <img id="navBarLogo" src="images/emptyTag.png" alt="logo image" /> */}

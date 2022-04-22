@@ -1,6 +1,9 @@
 #sliderChild {
   background: linear-gradient(90deg, #ecf0ff 50%, #ffffff 50%);
-  height: 100vh;
+  /* height: 100vh; */
+}
+#navbarID {
+  padding: 0 !important;
 }
 .navBarItem {
   text-decoration: none;
@@ -110,6 +113,9 @@ a:hover:after {
     color: black;
     font-weight: 400;
     font-size: 17px;
+  }
+  #navbarID {
+    background: linear-gradient(90deg, #ecf0ff 50%, #ffffff 50%);
   }
 }
 
