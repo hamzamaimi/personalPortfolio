@@ -61,6 +61,38 @@ a:hover:after {
 .nav-link:hover {
   color: inherit;
 }
+#testoVariabile {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 3rem;
+  color: #3f64ff;
+  font-weight: bolder;
+}
+#testoFisso {
+  font-weight: bolder;
+  font-size: 3rem;
+  font-family: cursive;
+}
+#sliderGreetening {
+  font-weight: bolder;
+  font-size: 28px;
+  color: #3f64ff;
+  line-height: 28.8px;
+  letter-spacing: 3px;
+}
+#sliderMyName {
+  font-size: 70px;
+  font-weight: 800;
+}
+#sliderContent {
+  margin-bottom: 5%;
+}
+#rhombus {
+  background: #ecf0ff;
+  height: 100px;
+  width: 100;
+  transform: rotate(45deg);
+}
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -68,6 +100,9 @@ a:hover:after {
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  #sliderContent {
+    margin-bottom: 10%;
+  }
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -96,6 +131,32 @@ a:hover:after {
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+  #testoVariabile {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 2rem;
+    color: #3f64ff;
+    font-weight: bolder;
+  }
+  #testoFisso {
+    font-weight: bolder;
+    font-size: 1.3rem;
+    font-family: cursive;
+  }
+  #sliderGreetening {
+    font-weight: bolder;
+    font-size: 16px;
+    color: #3f64ff;
+    line-height: 28.8px;
+    letter-spacing: 3px;
+  }
+  #sliderMyName {
+    font-size: 60px;
+    font-weight: 800;
+  }
+  #sliderContent {
+    margin-bottom: 5%;
+  }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
