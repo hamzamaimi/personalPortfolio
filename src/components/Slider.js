@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect, useState } from "react";
 import $ from 'jquery'
 
-import Rhombus from "./Rhombus";
 const Slider = () => {
     let [sliderHeight, setSliderHeight] = useState(null);
 
@@ -14,7 +13,9 @@ const Slider = () => {
         if (!sliderHeight) {
             setSliderHeight({ height: `${height}` })
         }
-        console.log(sliderHeight)
+        localStorage.setItem('screenHeightInPx', height)
+        localStorage.setItem('navbarHeight', navbarHeight)
+        localStorage.setItem('screenHeightNoNavbar', screenHeight - navbarHeight)
     }, [sliderHeight])
 
 
@@ -81,19 +82,16 @@ const Slider = () => {
             <>
                 <div style={sliderHeight} id="sliderChild" className="container-fluid">
                     <div className="row h-100">
-                        <div className="h-100 row w-100">
-                            <div className="col-lg-4 col-xl-2"></div>
-                            <div id="sliderContent" className="col-lg-4 col-xl-8 text-center align-self-center">
-                                <div id="sliderGreetening" className="text-center">HEY! I AM</div>
-                                <div id="sliderMyName" className="text-center">Hamza Maimi</div>
-                                <span > <h2 id="testoFisso">I'm a </h2></span>
-                                <span id="testoVariabile" href="#" className="typewrite" data-period="500" data-type='[ "Frontend Developer!", "Backend Developer!", "Blogger!", "Coding Lover!" ]'>
-                                    <span className="wrap"></span>
-
-                                </span>
-                            </div>
-                            <div className="col-lg-4 col-xl-2"></div>
+                        <div className="col-1 col-lg-4 col-xl-2"></div>
+                        <div id="sliderContent" className="col-10 col-lg-4 col-xl-8 text-center align-self-center">
+                            <div id="sliderGreetening" className="text-center">HEY! I AM</div>
+                            <div id="sliderMyName" className="text-center">Hamza Maimi</div>
+                            <span > <h2 id="testoFisso">I'm a </h2></span>
+                            <span id="testoVariabile" href="#" className="typewrite" data-period="500" data-type='[ "Frontend Developer!", "Backend Developer!", "Blogger!", "Coding Lover!" ]'>
+                                <span className="wrap"></span>
+                            </span>
                         </div>
+                        <div className="col-1 col-lg-4 col-xl-2"></div>
                     </div>
                 </div>
             </>

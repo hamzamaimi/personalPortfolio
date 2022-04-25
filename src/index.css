@@ -87,12 +87,6 @@ a:hover:after {
 #sliderContent {
   margin-bottom: 5%;
 }
-#rhombus {
-  background: #ecf0ff;
-  height: 100px;
-  width: 100;
-  transform: rotate(45deg);
-}
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

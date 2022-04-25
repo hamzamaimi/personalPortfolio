@@ -1,6 +1,8 @@
 import React from "react";
+import $ from 'jquery';
 
 const NavBar = () => {
+
     return (
         <>
             {/* <div className="row sticky-top">
@@ -34,25 +36,25 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav">
                         <li className="nav-item text-center">
-                            <a href="#" className="nav-link">Home</a>
+                            <a onClick={collapse} href="#" className="nav-link">Home</a>
                         </li>
                         <li className="nav-item text-center">
-                            <a href="#" className="nav-link">About</a>
+                            <a onClick={collapse} href="#aboutPage" className="nav-link">About</a>
                         </li>
                         <li className="nav-item text-center">
-                            <a href="#" className="nav-link">Resume</a>
+                            <a onClick={collapse} href="#" className="nav-link">Resume</a>
                         </li>
                         <li className="nav-item text-center">
-                            <a href="#" className="nav-link">Services</a>
+                            <a onClick={collapse} href="#" className="nav-link">Services</a>
                         </li>
                         <li className="nav-item text-center">
-                            <a href="#" className="nav-link">Projects</a>
+                            <a onClick={collapse} href="#" className="nav-link">Projects</a>
                         </li>
                         <li className="nav-item text-center">
-                            <a href="#" className="nav-link">My Blog</a>
+                            <a onClick={collapse} href="#" className="nav-link">My Blog</a>
                         </li>
                         <li className="nav-item text-center">
-                            <a href="#" className="nav-link">Contact</a>
+                            <a onClick={collapse} href="#" className="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>
