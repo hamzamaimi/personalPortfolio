@@ -101,6 +101,25 @@ a:hover:after {
 #aboutPageContent {
   height: 80%;
 }
+#aboutTitle {
+  font-size: 50px;
+  font-weight: bold;
+}
+.aboutContent {
+  font-size: 18px;
+  color: rgb(153, 153, 153);
+  font-weight: 400;
+}
+.verticalMargin5 {
+  margin: 5% 0;
+}
+.verticalMargin2 {
+  margin: 2% 0;
+}
+#downloadAnchorAbout:hover {
+  text-decoration: none;
+}
+
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 }
@@ -131,6 +150,9 @@ a:hover:after {
     text-decoration-color: rgb(251, 246, 246);
     text-underline-offset: 6px;
     text-decoration-thickness: 3px;
+  }
+  #downlaodButtonAbout {
+    text-align: center;
   }
 }
 
