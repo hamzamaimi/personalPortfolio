@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 import Slider from "./components/Slider";
 import NavBar from "./components/NavBar";
-import Resume from "./components/Resume";
+import About from "./components/About";
 
 const App = () => {
     $('.navbar-nav>li>a').on('click', function () {
@@ -16,7 +16,7 @@ const App = () => {
         <>
             <NavBar />
             <Slider />
-            <Resume />
+            <About />
         </>
     )
 }
