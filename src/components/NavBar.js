@@ -4,7 +4,7 @@ import $ from 'jquery'
 
 const NavBar = () => {
     function download() {
-        if (confirm('Download file?')) {
+        if (confirm('Vuoi scaricare il mio curriculum?')) {
             collapse();
             var a = document.createElement('a');
             a.setAttribute('href', 'documents/HamzaMaimiCurriculum.pdf');
@@ -59,11 +59,11 @@ const NavBar = () => {
                         <li className="nav-item text-center">
                             <a onClick={download} href="#" className="nav-link">Resume</a>
                         </li>
-                        <li className="nav-item text-center">
+                        {/* <li className="nav-item text-center">
                             <a onClick={collapse} href="#" id="nav-link-services" className="nav-link">Services</a>
-                        </li>
+                        </li> */}
                         <li className="nav-item text-center">
-                            <a onClick={collapse} href="#" id="nav-link-projects" className="nav-link">Projects</a>
+                            <a onClick={collapse} href="#selettoreProjectsSection" id="nav-link-projects" className="nav-link">Projects</a>
                         </li>
                         <li className="nav-item text-center">
                             <a onClick={collapse} href="#" id="nav-link-myblog" className="nav-link">My Blog</a>

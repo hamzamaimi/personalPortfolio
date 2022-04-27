@@ -148,6 +148,13 @@ a:hover:after {
   margin: 0;
   padding: 0;
 }
+#projectsTitle {
+  font-size: 48px;
+  font-weight: bold;
+}
+.projectsVerticalMargin {
+  margin: 10% 0;
+}
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .paddingAboutFooter {
@@ -163,10 +170,16 @@ a:hover:after {
   .paddingAboutFooter {
     padding: 0 10%;
   }
+  .projectsVerticalMargin {
+    margin: 25% 0;
+  }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .projectsVerticalMargin {
+    margin: 20% 0;
+  }
   #navbarID {
     background-color: black;
   }

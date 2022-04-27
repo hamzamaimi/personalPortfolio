@@ -13,17 +13,20 @@ const Footer = () => {
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </div>
-                            <div className="col-3 verticalMargin5 text-center">
+                            <div className="col-1"></div>
+                            <div className="col-3 col-lg-3 verticalMargin5 text-center">
                                 <a href="#">
                                     <img style={{ borderRadius: '50%', height: '50px' }} src="images/linkedinIcon.gif" />
                                 </a>
                             </div>
-                            <div className="col-1"></div>
-                            <div className="col-3 verticalMargin5 text-center">
+                            <div className="col-3 col-lg-1"></div>
+                            <div className="col-3 col-lg-3 verticalMargin5 text-center">
                                 <a href="#">
                                     <img style={{ borderRadius: '10%', height: '50px' }} src="images/twitterIcon.gif" />
                                 </a>
                             </div>
+                            <div className="col-1"></div>
+
                         </div>
                     </div>
                     <div className="col-12 col-md-6 verticalMargin5 col-lg-4">
