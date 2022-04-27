@@ -1,0 +1,86 @@
+import React from "react";
+
+const Footer = () => {
+    return (
+        <>
+            <div id="footer" className="container-fluid">
+                <div className="row" style={{ color: 'white' }}>
+                    <div className="col-12 verticalMargin5 col-lg-4">
+                        <div className="row paddingAboutFooter" >
+                            <div className="col-12 bottomMargin10 footerTitles">About</div>
+                            <div className="col-12 footerText">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-12 verticalMargin5 col-lg-4">
+                        <div className="row paddingAboutFooter">
+                            <div className="col-12 bottomMargin10 footerTitles">Links</div>
+                            <ul className="ulFooter">
+                                <li>
+                                    <a href="#" className="footerText">
+                                        <i className="fa-solid fa-arrow-right" style={{ marginRight: '10px' }} />
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#aboutPage" className="footerText">
+                                        <i className="fa-solid fa-arrow-right" style={{ marginRight: '10px' }} />
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="footerText">
+                                        <i className="fa-solid fa-arrow-right" style={{ marginRight: '10px' }} />
+                                        Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="footerText">
+                                        <i className="fa-solid fa-arrow-right" style={{ marginRight: '10px' }} />
+                                        My Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="footerText">
+                                        <i className="fa-solid fa-arrow-right" style={{ marginRight: '10px' }} />
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-12 verticalMargin5 col-lg-4">
+                        <div className="row">
+
+                            <div className="col-12 bottomMargin10 footerTitles">Have a Question?</div>
+                            <div className="col-12">
+                                <div className="row">
+                                    <div className="col-1 align-self-center"><i style={{ fontSize: '18px' }} className="fa-solid fa-location-dot"></i></div>
+                                    <div className="col-11 footerText">Modena 41059 ITALY</div>
+                                </div>
+                                <div className="row marginTop10">
+                                    <div className="col-1 align-self-center"><i style={{ fontSize: '18px' }} className="fa-solid fa-phone"></i></div>
+                                    <div className="col-11 footerText">
+                                        <a className="footerText" href="tel:+39-3392579431">+39 339-2579431</a>
+                                    </div>
+                                </div>
+                                <div className="row marginTop10">
+                                    <div className="col-1 align-self-center"><i style={{ fontSize: '18px' }} className="fa-solid fa-envelope"></i></div>
+                                    <div className="col-11 footerText">
+                                        <a className="footerText" href="mailto:hamzamaimi@gmail.com">hamzamaimi@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Footer; 
