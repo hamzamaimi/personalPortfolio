@@ -1,7 +1,23 @@
 import React from "react";
+import $ from 'jquery'
+
 
 const NavBar = () => {
+    function download() {
+        if (confirm('Download file?')) {
+            collapse();
+            var a = document.createElement('a');
+            a.setAttribute('href', 'documents/HamzaMaimiCurriculum.pdf');
+            a.setAttribute('download', 'HamzaMaimiCurriculum');
 
+            var aj = $(a);
+            aj.appendTo('body');
+            aj[0].click();
+            aj.remove();
+        }
+
+        return false;
+    }
     return (
         <>
             {/* <div className="row sticky-top">
@@ -41,7 +57,7 @@ const NavBar = () => {
                             <a onClick={collapse} href="#aboutPage" id="nav-link-about" className="nav-link">About</a>
                         </li>
                         <li className="nav-item text-center">
-                            <a onClick={collapse} href="#" className="nav-link">Resume</a>
+                            <a onClick={download} href="#" className="nav-link">Resume</a>
                         </li>
                         <li className="nav-item text-center">
                             <a onClick={collapse} href="#" id="nav-link-services" className="nav-link">Services</a>

@@ -96,7 +96,7 @@ const About = () => {
                                 <div className="col-12 verticalMargin5" id="downlaodButtonAbout" >
                                     <form method="get" action="documents/HamzaMaimiCurriculum.pdf">
                                         <button style={{ borderRadius: '15px' }} type="button" className="btn btn-primary">
-                                            <a id="downloadAnchorAbout" href="documets/HamzaMaimiCurriculum.pdf" download style={{ fontWeight: 'bold', fontSize: '12px', color: 'white' }}>DOWNLOAD CV</a>
+                                            <a id="downloadAnchorAbout" href="documents/HamzaMaimiCurriculum.pdf" download style={{ fontWeight: 'bold', fontSize: '12px', color: 'white' }}>DOWNLOAD CV</a>
                                         </button>
                                     </form>
                                 </div>
