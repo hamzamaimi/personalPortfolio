@@ -110,6 +110,9 @@ a:hover:after {
   color: rgb(153, 153, 153);
   font-weight: 400;
 }
+.marginTop10 {
+  margin-top: 10%;
+}
 .verticalMargin5 {
   margin: 5% 0;
 }
@@ -119,15 +122,46 @@ a:hover:after {
 #downloadAnchorAbout:hover {
   text-decoration: none;
 }
-
+#footer {
+  background-color: black;
+}
+.footerTitles {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.bottomMargin10 {
+  margin-bottom: 10%;
+}
+.footerText {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 28.8px;
+}
+.footerText:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.ulFooter {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .paddingAboutFooter {
+    padding: 0 10%;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   #sliderContent {
     margin-bottom: 10%;
+  }
+  .paddingAboutFooter {
+    padding: 0 10%;
   }
 }
 
@@ -154,6 +188,15 @@ a:hover:after {
   #downlaodButtonAbout {
     text-align: center;
   }
+  .paddingAboutFooter {
+    padding: 0 10%;
+  }
+  .ulFooter {
+    margin: 0 auto;
+  }
+  .footerTitles {
+    text-align: center;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -161,6 +204,9 @@ a:hover:after {
   .navbar-brand {
     margin-left: 5%;
     margin-right: 16%;
+  }
+  .paddingAboutFooter {
+    padding: 0 14%;
   }
 }
 
@@ -191,6 +237,9 @@ a:hover:after {
   }
   #sliderContent {
     margin-bottom: 5%;
+  }
+  .paddingAboutFooter {
+    padding: 0 16%;
   }
 }
 
@@ -225,4 +274,7 @@ a:hover:after {
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+  .paddingAboutFooter {
+    padding: 0 18%;
+  }
 }
