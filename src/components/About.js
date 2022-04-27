@@ -18,7 +18,7 @@ const About = () => {
         }
         if (!screenHeightNoNavbar) {
             setScreenHeightNoNavbar(localStorage.getItem('screenHeightNoNavbar'))
-            setScreenHeightNoNavbarCss({ maxHeight: localStorage.getItem('screenHeightNoNavbar') + 'px' })
+            setScreenHeightNoNavbarCss({ maxHeight: localStorage.getItem('screenHeightNoNavbar') + 'px, ', padding: localStorage.getItem('navbarHeight') + 'px' })
         }
         if (!navbarHeight) {
             setnavbarHeight(localStorage.getItem('navbarHeight'))
