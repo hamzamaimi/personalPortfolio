@@ -13,9 +13,20 @@ const Footer = () => {
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </div>
+                            <div className="col-3 verticalMargin5 text-center">
+                                <a href="#">
+                                    <img style={{ borderRadius: '50%', height: '50px' }} src="images/linkedinIcon.gif" />
+                                </a>
+                            </div>
+                            <div className="col-1"></div>
+                            <div className="col-3 verticalMargin5 text-center">
+                                <a href="#">
+                                    <img style={{ borderRadius: '10%', height: '50px' }} src="images/twitterIcon.gif" />
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-12 verticalMargin5 col-lg-4">
+                    <div className="col-12 col-md-6 verticalMargin5 col-lg-4">
                         <div className="row paddingAboutFooter">
                             <div className="col-12 bottomMargin10 footerTitles">Links</div>
                             <ul className="ulFooter">
@@ -52,13 +63,33 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-12 verticalMargin5 col-lg-4">
+                    <div className="col-12 col-md-6 verticalMargin5 col-lg-4">
                         <div className="row">
-
-                            <div className="col-12 bottomMargin10 footerTitles">Have a Question?</div>
+                            <div className="col-12 text-center bottomMargin10 footerTitles">Have a Question?</div>
                             <div className="col-12">
                                 <div className="row">
-                                    <div className="col-1 align-self-center"><i style={{ fontSize: '18px' }} className="fa-solid fa-location-dot"></i></div>
+                                    <div className="col text-center footerText">
+                                        <i style={{ fontSize: '18px', color: 'white', marginRight: '15px' }} className="fa-solid fa-location-dot "></i>
+                                        Modena 41059 ITALY
+                                    </div>
+                                </div>
+                                <div className="row marginTop10">
+                                    <div className="col-11 text-center footerText">
+                                        <i style={{ fontSize: '18px', color: 'white', marginRight: '15px', marginLeft: '8%' }} className="fa-solid fa-phone"></i>
+                                        <a className="footerText" href="tel:+39-3392579431">+39 339-2579431</a>
+                                    </div>
+                                </div>
+                                <div className="row marginTop10">
+                                    <div className="col-11 text-center footerText">
+                                        <i style={{ fontSize: '18px', color: 'white', marginRight: '15px', marginLeft: '12%' }} className="fa-solid fa-envelope"></i>
+                                        <a className="footerText" href="mailto:hamzamaimi@gmail.com">hamzamaimi@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div className="col-12">
+                                <div className="row">
+                                    <div className="col-1 align-self-center">
+                                        <i style={{ fontSize: '18px' }} className="fa-solid fa-location-dot"></i></div>
                                     <div className="col-11 footerText">Modena 41059 ITALY</div>
                                 </div>
                                 <div className="row marginTop10">
@@ -73,10 +104,10 @@ const Footer = () => {
                                         <a className="footerText" href="mailto:hamzamaimi@gmail.com">hamzamaimi@gmail.com</a>
                                     </div>
                                 </div>
-                            </div>
-
+                            </div> */}
                         </div>
                     </div>
+
                 </div>
             </div>
         </>

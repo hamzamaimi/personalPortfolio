@@ -109,16 +109,16 @@ const About = () => {
                 </div>
                 <div className="container-fluid verticalMargin5">
                     <div className="row">
-                        <div className="col-6 col-lg-3 text-center">
+                        <div className="col-6 col-lg-3 text-center verticalMargin5">
                             <i className="fa-brands fa-java" style={{ fontSize: '100px' }} />
                         </div>
-                        <div className="col-6 col-lg-3 text-center">
+                        <div className="col-6 col-lg-3 text-center verticalMargin5">
                             <i className="fa-brands fa-js" style={{ fontSize: '100px' }} />
                         </div>
-                        <div className="col-6 col-lg-3 text-center">
+                        <div className="col-6 col-lg-3 text-center verticalMargin5">
                             <i className="fa-brands fa-html5" style={{ fontSize: '100px' }} />
                         </div>
-                        <div className="col-6 col-lg-3 text-center">
+                        <div className="col-6 col-lg-3 text-center verticalMargin5">
                             <i className="fa-brands fa-css3-alt" style={{ fontSize: '100px' }} />
                         </div>
                     </div>
