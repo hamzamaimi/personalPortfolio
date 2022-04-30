@@ -100,9 +100,9 @@ const Slider = () => {
         this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
         var that = this;
-        var delta = 200 - Math.random() * 100;
+        var delta = 100 - Math.random() * 100;
 
-        if (this.isDeleting) { delta /= 4; }
+        if (this.isDeleting) { delta /= 3; }
 
         if (!this.isDeleting && this.txt === fullTxt) {
             delta = this.period;
