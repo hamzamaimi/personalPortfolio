@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import ContactMe from "./components/ContactMe";
 
 const App = () => {
     $('.navbar-nav>li>a').on('click', function () {
@@ -20,6 +21,7 @@ const App = () => {
             <Slider />
             <About />
             <Projects />
+            <ContactMe />
             <Footer />
         </>
     )

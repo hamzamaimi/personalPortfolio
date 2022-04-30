@@ -15,13 +15,13 @@ const Footer = () => {
                             </div>
                             <div className="col-1"></div>
                             <div className="col-3 col-lg-3 verticalMargin5 text-center">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/in/hamza-maimi-37415620b">
                                     <img style={{ borderRadius: '50%', height: '50px' }} src="images/linkedinIcon.gif" />
                                 </a>
                             </div>
                             <div className="col-3 col-lg-1"></div>
                             <div className="col-3 col-lg-3 verticalMargin5 text-center">
-                                <a href="#">
+                                <a href="https://twitter.com/Hamza_Maimi">
                                     <img style={{ borderRadius: '10%', height: '50px' }} src="images/twitterIcon.gif" />
                                 </a>
                             </div>
@@ -46,21 +46,21 @@ const Footer = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="footerText">
+                                    <a href="#selettoreProjectsSection" className="footerText">
                                         <i className="fa-solid fa-arrow-right" style={{ marginRight: '10px' }} />
                                         Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contactMeSelector" className="footerText">
+                                        <i className="fa-solid fa-arrow-right" style={{ marginRight: '10px' }} />
+                                        Contact
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" className="footerText">
                                         <i className="fa-solid fa-arrow-right" style={{ marginRight: '10px' }} />
                                         My Blog
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="footerText">
-                                        <i className="fa-solid fa-arrow-right" style={{ marginRight: '10px' }} />
-                                        Contact
                                     </a>
                                 </li>
                             </ul>

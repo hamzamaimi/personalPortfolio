@@ -56,9 +56,6 @@ const NavBar = () => {
                         <li className="nav-item text-center">
                             <a onClick={collapse} href="#aboutPage" id="nav-link-about" className="nav-link">About</a>
                         </li>
-                        <li className="nav-item text-center">
-                            <a onClick={download} href="#" className="nav-link">Resume</a>
-                        </li>
                         {/* <li className="nav-item text-center">
                             <a onClick={collapse} href="#" id="nav-link-services" className="nav-link">Services</a>
                         </li> */}
@@ -66,10 +63,13 @@ const NavBar = () => {
                             <a onClick={collapse} href="#selettoreProjectsSection" id="nav-link-projects" className="nav-link">Projects</a>
                         </li>
                         <li className="nav-item text-center">
-                            <a onClick={collapse} href="#" id="nav-link-myblog" className="nav-link">My Blog</a>
+                            <a onClick={collapse} href="#contactMeSelector" id="nav-link-contact" className="nav-link">Contact</a>
                         </li>
                         <li className="nav-item text-center">
-                            <a onClick={collapse} href="#" id="nav-link-contact" className="nav-link">Contact</a>
+                            <a onClick={download} href="#" className="nav-link">Resume</a>
+                        </li>
+                        <li className="nav-item text-center">
+                            <a onClick={collapse} href="#" id="nav-link-myblog" className="nav-link">My Blog</a>
                         </li>
                     </ul>
                 </div>

@@ -155,10 +155,80 @@ a:hover:after {
 .projectsVerticalMargin {
   margin: 10% 0;
 }
+.topBottomMargin10 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+#wedoProject {
+  background-image: url("../public/images/wedo.png");
+}
+.projectsBackGround {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 14px;
+}
+#tecchandoProject {
+  background-image: url("../public/images/tecchando.png");
+}
+.projectsBackGround:hover {
+  -webkit-filter: grayscale(100%) blur(0.5px);
+  filter: grayscale(100%) blur(0.5px);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+#wedoTitle {
+  display: none;
+}
+#tecchandoProject:hover:before {
+  opacity: 1;
+}
+.coomingSoon {
+  background-image: url("../public/images/coming_soon.png");
+}
+.projectsColumns {
+  height: 300px;
+  margin-top: 5%;
+}
+.technologiesImages {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#contactTitle {
+  font-size: 56px;
+  font-weight: bold;
+}
+.contactDivs {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 90%;
+}
+.aboutContent:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.aboutContent > a:after {
+  color: inherit;
+  background: inherit;
+}
+.contentContactMe {
+  margin-top: 10%;
+}
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .paddingAboutFooter {
     padding: 0 10%;
+  }
+  .projectsColumns {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+  }
+  .contentContactMe {
+    margin-top: 10%;
   }
 }
 
@@ -262,6 +332,11 @@ a:hover:after {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .technologiesImages {
+    width: 60%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */

@@ -22,7 +22,7 @@ const About = () => {
         }
         if (!navbarHeight) {
             setnavbarHeight(localStorage.getItem('navbarHeight'))
-            console.log('navbar height!', localStorage.getItem('navbarHeight'))
+            // console.log('navbar height!', localStorage.getItem('navbarHeight'))
             setMarginTopCssRule({ marginTop: $("#navbarID").height() + 'px' })
         }
     }, [screenHeightCss, screenHeightNoNavbar, navbarHeight, marginTopCssRule])
@@ -56,9 +56,10 @@ const About = () => {
             if ($(window).scrollTop() > localStorage.getItem('screenHeightNoNavbar')) {
                 $('#nav-link-about').addClass('onElementPage');
                 $('#nav-link-home').removeClass('onElementPage');
+                $('#nav-link-projects').removeClass('onElementPage');
             } else if ($(window).scrollTop() < localStorage.getItem('screenHeightNoNavbar')) {
                 $('#nav-link-about').removeClass('onElementPage');
-                $('#nav-link-home').addClass('onElementPage');
+                $('#nav-link-projects').removeClass('onElementPage');
             }
         });
 
@@ -107,7 +108,7 @@ const About = () => {
                     </div>
 
                 </div>
-                <div className="container-fluid verticalMargin5">
+                <div id="technologiesLogo" className="container-fluid verticalMargin5">
                     <div className="row">
                         <div className="col-6 col-lg-3 text-center verticalMargin5">
                             <i className="fa-brands fa-java" style={{ fontSize: '100px' }} />
