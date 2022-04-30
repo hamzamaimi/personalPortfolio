@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
 import $ from 'jquery'
 import { Link } from "react-router-dom";
 
 
 const NavBar = (props) => {
     function download() {
-        if (confirm('Vuoi scaricare il mio curriculum?')) {
+        if (window.confirm('Vuoi scaricare il mio curriculum?')) {
             collapse();
             var a = document.createElement('a');
             a.setAttribute('href', 'documents/HamzaMaimiCurriculum.pdf');
@@ -19,6 +18,11 @@ const NavBar = (props) => {
 
         return false;
     }
+    const collapse = () => {
+        // $('.navbar-collapse').collapse('hide');
+        $('#navbarSupportedContent').removeClass('show')
+    }
+
 
     return (
         <>
@@ -53,7 +57,7 @@ const NavBar = (props) => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav">
                         <li className="nav-item text-center">
-                            <a onClick={collapse} href="#" id="nav-link-home" className="nav-link onElementPage">Home</a>
+                            <a onClick={collapse} href="#root" id="nav-link-home" className="nav-link onElementPage">Home</a>
                         </li>
                         <li className="nav-item text-center">
                             <a onClick={collapse} href="#aboutPage" id="nav-link-about" className="nav-link">About</a>
@@ -68,7 +72,7 @@ const NavBar = (props) => {
                             <a onClick={collapse} href="#contactMeSelector" id="nav-link-contact" className="nav-link">Contact</a>
                         </li>
                         <li className="nav-item text-center">
-                            <a onClick={download} href="#" className="nav-link">Resume</a>
+                            <a onClick={download} href="#navbarID" className="nav-link">Resume</a>
                         </li>
                         <li className="nav-item text-center">
                             <Link to="/blog" onClick={collapse} id="nav-link-myblog" className="nav-link">My Blog</Link>
