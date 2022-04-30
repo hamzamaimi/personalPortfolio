@@ -20,6 +20,7 @@ const Blog = () => {
     } else {
         return (
             <>
+                <style dangerouslySetInnerHTML={{ __html: "\n                    #root {\n                        height: 100%;\n}\n                    html {\n                        height: 100%;\n}\n                    body {\n                        height: 100%;\n}\n                " }} />
                 <div className="container-fluid h-100">
                     <div className="row centra">
                         <div className="col text-center h-100">
