@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -9,9 +10,11 @@ const Footer = () => {
                         <div className="row paddingAboutFooter" >
                             <div className="col-12 bottomMargin10 footerTitles">About</div>
                             <div className="col-12 footerText">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Hamza Maimi,<br /> web developer e appassionato di informatica.
+                                Si proprio cosi, programmare e acquisire nuove conoscenze legate all’ IT mi diverte, anche molto!
+                                Questo è un piccolo esempio dei lavoretti che faccio nel tempo libero.
+                                Il sito è basato sul framework reactJS e potete consultarne il codice su git
+                                <a id="repoLink" style={{ display: 'block', textAlign: 'center' }} href="https://gitlab.com/hamzamaimi/myportfolio">Repository </a>
                             </div>
                             <div className="col-1"></div>
                             <div className="col-3 col-lg-3 verticalMargin5 text-center">
@@ -58,10 +61,10 @@ const Footer = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="footerText">
+                                    <Link to="/blog" className="footerText">
                                         <i className="fa-solid fa-arrow-right" style={{ marginRight: '10px' }} />
                                         My Blog
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

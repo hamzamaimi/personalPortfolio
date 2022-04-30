@@ -1,13 +1,10 @@
 import React from "react";
 import $ from 'jquery';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
-import Slider from "./components/Slider";
-import NavBar from "./components/NavBar";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Projects from "./components/Projects";
-import ContactMe from "./components/ContactMe";
+import Blog from "./components/Blog";
+import HomePage from "./components/HomePage"
 
 const App = () => {
     $('.navbar-nav>li>a').on('click', function () {
@@ -17,12 +14,12 @@ const App = () => {
 
     return (
         <>
-            <NavBar />
-            <Slider />
-            <About />
-            <Projects />
-            <ContactMe />
-            <Footer />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/blog" element={<Blog />} />
+                    <Route path="" element={<HomePage />} />
+                </Routes>
+            </BrowserRouter>
         </>
     )
 }

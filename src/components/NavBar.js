@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import $ from 'jquery'
+import { Link } from "react-router-dom";
 
 
-const NavBar = () => {
+const NavBar = (props) => {
     function download() {
         if (confirm('Vuoi scaricare il mio curriculum?')) {
             collapse();
@@ -18,6 +19,7 @@ const NavBar = () => {
 
         return false;
     }
+
     return (
         <>
             {/* <div className="row sticky-top">
@@ -69,7 +71,7 @@ const NavBar = () => {
                             <a onClick={download} href="#" className="nav-link">Resume</a>
                         </li>
                         <li className="nav-item text-center">
-                            <a onClick={collapse} href="#" id="nav-link-myblog" className="nav-link">My Blog</a>
+                            <Link to="/blog" onClick={collapse} id="nav-link-myblog" className="nav-link">My Blog</Link>
                         </li>
                     </ul>
                 </div>
