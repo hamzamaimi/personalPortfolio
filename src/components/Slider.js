@@ -79,6 +79,7 @@ const Slider = () => {
 
     if (window.matchMedia("(pointer: coarse)").matches) {
         var typeEffect = () => {
+            $('#testoVariabile').css('display', 'block')
             var elements = document.getElementsByClassName('typewrite');
             for (var i = 0; i < elements.length; i++) {
                 var toRotate = elements[i].getAttribute('data-type');
@@ -99,6 +100,7 @@ const Slider = () => {
         });
     } else {
         window.onload = function () {
+            $('#testoVariabile').css('display', 'block')
             var elements = document.getElementsByClassName('typewrite');
             for (var i = 0; i < elements.length; i++) {
                 var toRotate = elements[i].getAttribute('data-type');
@@ -154,8 +156,16 @@ const Slider = () => {
             that.tick();
         }, delta);
     };
+    $(document).ready(function () {
+        setTimeout(() => {
+            if ($('#testoVariabile').is(':hidden')) {
+                $('#testoSostitutivo').css('display', 'block')
+            } else {
+                $('#testoSostitutivo').css('display', 'none')
+            }
 
-
+        }, 300)
+    });
 
 
 
@@ -172,7 +182,7 @@ const Slider = () => {
                             <span id="testoVariabile" href="#" className="typewrite" data-period="100" data-type='[ "Frontend Developer!", "Backend Developer!", "Blogger!", "Coding Lover!" ]'>
                                 <span className="wrap"></span>
                             </span>
-                            {/* <span id="testoVariabilePhone">Web Developer!</span> */}
+                            <span id="testoSostitutivo">Web Developer!</span>
                         </div>
                         <div className="col-1 col-lg-4 col-xl-2"></div>
                     </div>

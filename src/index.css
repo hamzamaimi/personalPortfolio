@@ -73,6 +73,13 @@ a:hover:after {
   color: #3f64ff;
   font-weight: bolder;
 }
+#testoSostitutivo {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 3rem;
+  color: #3f64ff;
+  font-weight: bolder;
+}
 #testoFisso {
   font-weight: bolder;
   font-size: 3rem;
@@ -233,6 +240,12 @@ a:hover:after {
 }
 .importantRule {
   background-color: white !important;
+}
+#testoVariabile {
+  display: none;
+}
+#testoSostitutivo {
+  display: none;
 }
 /* TYPEWRITE PER TELEFONO */
 
