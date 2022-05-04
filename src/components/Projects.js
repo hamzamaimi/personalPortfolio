@@ -58,7 +58,7 @@ const Projects = () => {
                     </div>
                     <div className="row">
                         <div className="col-12 col-md-6 col-lg-6 projectsColumns" >
-                            <div id="wedoProject" className="projectsBackGround">
+                            <div /*id="wedoProject"*/ className="coomingSoon projectsBackGround">
                             </div>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6 projectsColumns">
