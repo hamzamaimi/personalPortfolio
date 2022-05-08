@@ -75,7 +75,7 @@ const NavBar = (props) => {
                             <a onClick={download} href="#navbarID" className="nav-link">Resume</a>
                         </li>
                         <li className="nav-item text-center">
-                            <Link to="/blog" onClick={collapse} id="nav-link-myblog" className="nav-link">My Blog</Link>
+                            <a href='https://tecchando.it/' onClick={collapse} id="nav-link-myblog" className="nav-link">My Blog</a>
                         </li>
                     </ul>
                 </div>

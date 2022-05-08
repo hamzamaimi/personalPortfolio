@@ -57,14 +57,15 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="row">
+                        <div className="col-12 col-md-6 col-lg-6 projectsColumns">
+                            <div onClick={() => { window.location.href = 'https://www.tecchando.it'; }} id="tecchandoProject" className="projectsBackGround">
+                            </div>
+                        </div>
                         <div className="col-12 col-md-6 col-lg-6 projectsColumns" >
                             <div /*id="wedoProject"*/ className="coomingSoon projectsBackGround">
                             </div>
                         </div>
-                        <div className="col-12 col-md-6 col-lg-6 projectsColumns">
-                            <div /*id="tecchandoProject"*/ className="coomingSoon projectsBackGround">
-                            </div>
-                        </div>
+
                         <div className="col-12 col-md-6 col-lg-6 projectsColumns">
                             <div className="projectsBackGround coomingSoon">
 
@@ -80,16 +81,16 @@ const Projects = () => {
                 <div id="technologiesProjects" className="container-fluid">
                     <div className="row">
                         <div className="col-6 col-lg-3 text-center verticalMargin5">
-                            <img className="technologiesImages" src="images/google.png" />
+                            <img alt="google" className="technologiesImages" src="images/google.png" />
                         </div>
                         <div className="col-6 col-lg-3 text-center verticalMargin5">
-                            <img className="technologiesImages" src="images/adobe.png" />
+                            <img alt="adobe" className="technologiesImages" src="images/adobe.png" />
                         </div>
                         <div className="col-6 col-lg-3 text-center verticalMargin5">
-                            <img className="technologiesImages" src="images/java.png" />
+                            <img alt="java" className="technologiesImages" src="images/java.png" />
                         </div>
                         <div className="col-6 col-lg-3 text-center verticalMargin5">
-                            <img className="technologiesImages" src="images/microsoft.png" />
+                            <img alt="microsoft" className="technologiesImages" src="images/microsoft.png" />
                         </div>
                     </div>
                 </div>

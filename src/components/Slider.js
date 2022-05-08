@@ -177,6 +177,7 @@ const Slider = () => {
     if (sliderHeight) {
         return (
             <>
+                <h1 style={{ display: 'none' }}>Hamza Maimi Web developer</h1>
                 <div style={sliderHeight} id="sliderChild" className="container-fluid">
                     <div className="row h-100">
                         <div className="col-1 col-lg-4 col-xl-2"></div>
