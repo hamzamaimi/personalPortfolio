@@ -13,7 +13,7 @@ const Footer = () => {
                                 Hamza Maimi,<br /> web developer e appassionato di informatica.
                                 Si proprio cosi, programmare e acquisire nuove conoscenze legate all’ IT mi diverte, anche molto!
                                 Questo è un piccolo esempio dei lavoretti che faccio nel tempo libero.
-                                Il sito è basato sul framework reactJS e potete consultarne il codice su git
+                                Il sito è basato interamente sulla libreria reactJS e potete consultarne il codice su git
                                 <a id="repoLink" style={{ display: 'block', textAlign: 'center' }} href="https://gitlab.com/hamzamaimi/myportfolio">Repository </a>
                             </div>
                             <div className="col-1"></div>
